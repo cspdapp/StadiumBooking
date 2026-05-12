@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ระบบจองสนามกีฬา มหาวิทยาลัยวลัยลักษณ์ (WU-SBS)</title>
+    <style>
+        /* ล้างค่า Margin และ Padding ป้องกันขอบขาว และซ่อน Scrollbar ของหน้าเว็บหลัก */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #f3f4f6; /* สีพื้นหลังเผื่อช่วงโหลด */
+        }
+
+        /* ตั้งค่า iframe ให้เต็มจอ 100% ไม่มีเส้นขอบ */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+
+        /* Loading Screen แบบง่ายๆ (จะหายไปเมื่อ iframe โหลดเสร็จ) */
+        #loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Kanit', sans-serif;
+            color: #0076B6;
+            font-weight: bold;
+            z-index: -1; /* ให้อยู่หลัง iframe */
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="loader">กำลังโหลดระบบ...</div>
+
+    <iframe 
+        src="https://script.google.com/macros/s/AKfycbzgPsehaZWigz5vaOi8WsaKc6nuKx9Bd9RIyI1p2OGEaFwP3iDs_jXAw0DMHGs3spNK/exec" 
+        title="ระบบจองสนามกีฬา มหาวิทยาลัยวลัยลักษณ์"
+        allowfullscreen>
+    </iframe>
+
+</body>
+</html>
