@@ -1,2 +1,2 @@
-# StadiumBooking
+# Stadium Booking
 ระบบจองสนามกีฬา มหาวิทยาลัยวลัยลักษณ์ (SBS)
